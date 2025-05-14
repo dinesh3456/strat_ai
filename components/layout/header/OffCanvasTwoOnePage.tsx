@@ -43,92 +43,43 @@ const OffCanvasTwoOnePage = ({ toggleMenu, handleToggleMenu }: any) => {
       <div className="mobile-menu overflow-hidden">
         <nav className="mean-nav">
           <ul>
-            <li className="has-megamenu">
-              <a
-                className={`drop ${isSubMenuButton("home")}`}
-                onClick={() => handleSubmenu("home")}
-              >
-                Home
-              </a>
-              <ul
-                className={`sub-menu mega-menu menu-image ${isSubMenuOpen(
-                  "home"
-                )}`}
-              >
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="about">About</Link>
+            </li>
+            <li>
+              <Link href="/service">Services</Link>
+              <ul className="sub-menu">
                 <li>
-                  <div className="image text-center">
-                    <Image src={one} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="/" className="btn-one">
-                        Multi Page
-                      </Link>
-                      <Link href="index-one-page" className="btn-one mt-2">
-                        One Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Page 01</h6>
-                  </div>
-                  <div className="image text-center">
-                    <Image src={two} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="index-2" className="btn-one">
-                        Multi Page
-                      </Link>
-                      <Link href="index-2-one-page" className="btn-one mt-2">
-                        One Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Page 02</h6>
-                  </div>
-                  <div className="image text-center">
-                    <Image src={three} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="index-3" className="btn-one">
-                        Multi Page
-                      </Link>
-                      <Link href="index-3-one-page" className="btn-one mt-2">
-                        One Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Page 03</h6>
-                  </div>
-                  <div className="image text-center">
-                    <Image src={four} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="index-dark" className="btn-one">
-                        View Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Dark</h6>
-                  </div>
+                  <Link href="service-solutions">IT Solutions</Link>
+                </li>
+                <li>
+                  <Link href="service">IT Services</Link>
+                </li>
+                <li>
+                  <Link href="service-details">Service Details</Link>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <Link href="/blog">Blog</Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link href="blog">Blog Grid</Link>
+                </li>
+                <li>
+                  <Link href="blog-standard">Blog Standard</Link>
+                </li>
+                <li>
+                  <Link href="blog-details">Blog Details</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="#about-two" onClick={() => handleToggleMenu(false)}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="#service-two" onClick={() => handleToggleMenu(false)}>
-                Services
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#team-two" onClick={() => handleToggleMenu(false)}>
-                Team
-              </Link>
-            </li>
-            <li>
-              <Link href="#faq-two" onClick={() => handleToggleMenu(false)}>
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link href="#blog-two" onClick={() => handleToggleMenu(false)}>
-                Blog
-              </Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>

@@ -1,35 +1,32 @@
-import TopHeader from "@/components/layout/header/TopHeader";
-import Header from "@/components/layout/header/Header";
-import Banner from "@/components/layout/banner/Banner";
-import Service from "@/components/containers/HomeOne/Service";
-import About from "@/components/containers/HomeOne/About";
-import CounterSection from "@/components/containers/HomeOne/CounterSection";
-import Case from "@/components/containers/HomeOne/Case";
-import Offer from "@/components/containers/HomeOne/Offer";
+import HeaderTwo from "@/components/layout/header/HeaderTwo";
+import BannerTwo from "@/components/layout/banner/BannerTwo";
 import Brand from "@/components/containers/HomeOne/Brand";
-import Process from "@/components/containers/HomeOne/Process";
-import Testimonial from "@/components/containers/HomeOne/Testimonial";
-import Blog from "@/components/containers/HomeOne/Blog";
-import Footer from "@/components/layout/footer/Footer";
+import AboutTwo from "@/components/containers/HomeTwo/AboutTwo";
+import ServiceTwo from "@/components/containers/HomeTwo/ServiceTwo";
+import ChooseArea from "@/components/containers/HomeTwo/ChooseArea";
+import Team from "@/components/containers/HomeTwo/Team";
+import Faq from "@/components/containers/HomeTwo/Faq";
+import CaseTwo from "@/components/containers/HomeTwo/CaseTwo";
+import TestimonialTwo from "@/components/containers/HomeTwo/TestimonialTwo";
+import BlogTwo from "@/components/containers/HomeTwo/BlogTwo";
+import Quote from "@/components/containers/HomeTwo/Quote";
+import FooterTwo from "@/components/layout/footer/FooterTwo";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 
 const page = () => {
   return (
     <>
-      <TopHeader />
-      <Header />
-      <Banner />
-      <Service />
-      <About />
-      <CounterSection />
-      <Case />
-      <Offer />
+      <HeaderTwo />
+      <BannerTwo />
       <Brand />
-      <Process />
-      <Testimonial />
-      <Blog />
-      <Footer />
+      <AboutTwo />
+      <ServiceTwo />
+
+      <CaseTwo />
+
+      <Quote />
+      <FooterTwo />
       <CustomCursor />
       <ScrollProgressButton />
     </>

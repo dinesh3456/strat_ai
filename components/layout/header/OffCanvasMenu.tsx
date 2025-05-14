@@ -3,10 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import svgLogo from "@/public/images/logo/logo.svg";
-import one from "@/public/images/menu/home1-image.jpg";
 import two from "@/public/images/menu/home2-image.jpg";
-import three from "@/public/images/menu/home3-image.jpg";
-import four from "@/public/images/menu/home4-image.jpg";
 
 const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
@@ -43,78 +40,15 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
       <div className="mobile-menu overflow-hidden">
         <nav className="mean-nav">
           <ul>
-            <li className="has-megamenu">
-              <a
-                className={`drop ${isSubMenuButton("home")}`}
-                onClick={() => handleSubmenu("home")}
-              >
-                Home
-              </a>
-              <ul
-                className={`sub-menu mega-menu menu-image ${isSubMenuOpen(
-                  "home"
-                )}`}
-              >
-                <li>
-                  <div className="image text-center">
-                    <Image src={one} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="/" className="btn-one">
-                        Multi Page
-                      </Link>
-                      <Link href="index-one-page" className="btn-one mt-2">
-                        One Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Page 01</h6>
-                  </div>
-                  <div className="image text-center">
-                    <Image src={two} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="index-2" className="btn-one">
-                        Multi Page
-                      </Link>
-                      <Link href="index-2-one-page" className="btn-one mt-2">
-                        One Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Page 02</h6>
-                  </div>
-                  <div className="image text-center">
-                    <Image src={three} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="index-3" className="btn-one">
-                        Multi Page
-                      </Link>
-                      <Link href="index-3-one-page" className="btn-one mt-2">
-                        One Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Page 03</h6>
-                  </div>
-                  <div className="image text-center">
-                    <Image src={four} alt="Image" priority />
-                    <div className="btn__group">
-                      <Link href="index-dark" className="btn-one">
-                        View Page
-                      </Link>
-                    </div>
-                    <h6 className="text-white">Home Dark</h6>
-                  </div>
-                </li>
-              </ul>
+            <li>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="about">About</Link>
             </li>
             <li>
-              <a
-                className={`drop ${isSubMenuButton("services")}`}
-                onClick={() => handleSubmenu("services")}
-              >
-                Services
-              </a>
-              <ul className={`sub-menu ${isSubMenuOpen("services")}`}>
+              <Link href="/service">Services</Link>
+              <ul className="sub-menu">
                 <li>
                   <Link href="service-solutions">IT Solutions</Link>
                 </li>
@@ -126,48 +60,10 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                 </li>
               </ul>
             </li>
+
             <li>
-              <a
-                className={`drop ${isSubMenuButton("pages")}`}
-                onClick={() => handleSubmenu("pages")}
-              >
-                Pages
-              </a>
-              <ul className={`sub-menu ${isSubMenuOpen("pages")}`}>
-                <li>
-                  <Link href="case">Case Study 01</Link>
-                </li>
-                <li>
-                  <Link href="case-2">Case Study 02</Link>
-                </li>
-                <li>
-                  <Link href="case-details">Case Study Details</Link>
-                </li>
-                <li>
-                  <Link href="team">Our Team</Link>
-                </li>
-                <li>
-                  <Link href="team-details">Team Details</Link>
-                </li>
-                <li>
-                  <Link href="pricing">Pricing</Link>
-                </li>
-                <li>
-                  <Link href="faq">FAQ&apos;s</Link>
-                </li>
-                <li>
-                  <Link href="error">404 Error</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a
-                className={`drop ${isSubMenuButton("blog")}`}
-                onClick={() => handleSubmenu("blog")}
-              >
-                Blog
-              </a>
-              <ul className={`sub-menu ${isSubMenuOpen("blog")}`}>
+              <Link href="/blog">Blog</Link>
+              <ul className="sub-menu">
                 <li>
                   <Link href="blog">Blog Grid</Link>
                 </li>
@@ -180,7 +76,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
               </ul>
             </li>
             <li>
-              <Link href="contact">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,4 @@
-import TopHeader from "@/components/layout/header/TopHeader";
-import Header from "@/components/layout/header/Header";
+import Header from "@/components/layout/header/HeaderTwo";
 import CmnBanner from "@/components/layout/banner/CmnBanner";
 import TeamSingle from "@/components/containers/team/TeamSingle";
 import Footer from "@/components/layout/footer/Footer";
@@ -9,7 +8,6 @@ import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 const page = () => {
   return (
     <div>
-      <TopHeader />
       <Header />
       <CmnBanner title="Team Details" />
       <TeamSingle />

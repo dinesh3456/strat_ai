@@ -79,66 +79,8 @@ const HeaderTwo = () => {
             <div className="main-menu d-none d-lg-block">
               <nav>
                 <ul>
-                  <li className="has-megamenu">
+                  <li>
                     <Link href="/">Home</Link>
-                    <ul className="sub-menu mega-menu menu-image">
-                      <li>
-                        <div className="image text-center">
-                          <Image src={one} alt="Image" priority />
-                          <div className="btn__group">
-                            <Link href="/" className="btn-one">
-                              Multi Page
-                            </Link>
-                            <Link
-                              href="index-one-page"
-                              className="btn-one mt-2"
-                            >
-                              One Page
-                            </Link>
-                          </div>
-                          <h6 className="text-white">Home Page 01</h6>
-                        </div>
-                        <div className="image text-center">
-                          <Image src={two} alt="Image" priority />
-                          <div className="btn__group">
-                            <Link href="index-2" className="btn-one">
-                              Multi Page
-                            </Link>
-                            <Link
-                              href="index-2-one-page"
-                              className="btn-one mt-2"
-                            >
-                              One Page
-                            </Link>
-                          </div>
-                          <h6 className="text-white">Home Page 02</h6>
-                        </div>
-                        <div className="image text-center">
-                          <Image src={three} alt="Image" priority />
-                          <div className="btn__group">
-                            <Link href="index-3" className="btn-one">
-                              Multi Page
-                            </Link>
-                            <Link
-                              href="index-3-one-page"
-                              className="btn-one mt-2"
-                            >
-                              One Page
-                            </Link>
-                          </div>
-                          <h6 className="text-white">Home Page 03</h6>
-                        </div>
-                        <div className="image text-center">
-                          <Image src={four} alt="Image" priority />
-                          <div className="btn__group">
-                            <Link href="index-dark" className="btn-one">
-                              View Page
-                            </Link>
-                          </div>
-                          <h6 className="text-white">Home Dark</h6>
-                        </div>
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     <Link href="about">About</Link>
@@ -157,35 +99,7 @@ const HeaderTwo = () => {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <Link href="/case">Pages</Link>
-                    <ul className="sub-menu">
-                      <li>
-                        <Link href="case">Case Study 01</Link>
-                      </li>
-                      <li>
-                        <Link href="case-2">Case Study 02</Link>
-                      </li>
-                      <li>
-                        <Link href="case-details">Case Study Details</Link>
-                      </li>
-                      <li>
-                        <Link href="team">Our Team</Link>
-                      </li>
-                      <li>
-                        <Link href="team-details">Team Details</Link>
-                      </li>
-                      <li>
-                        <Link href="pricing">Pricing</Link>
-                      </li>
-                      <li>
-                        <Link href="faq">FAQ&apos;s</Link>
-                      </li>
-                      <li>
-                        <Link href="error">404 Error</Link>
-                      </li>
-                    </ul>
-                  </li>
+
                   <li>
                     <Link href="/blog">Blog</Link>
                     <ul className="sub-menu">
