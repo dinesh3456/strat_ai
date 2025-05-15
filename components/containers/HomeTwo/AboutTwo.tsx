@@ -143,7 +143,6 @@ const AboutTwo = () => {
               <Link href="about" className="btn-one">
                 About Us <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
-              <Image src={Seven} alt="singature" priority />
             </div>
           </div>
         </div>

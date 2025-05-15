@@ -1,3 +1,4 @@
+// Updated ContactContent.tsx with new contact details
 import Link from "next/link";
 import Image from "next/image";
 import One from "@/public/images/icon/section-title.png";
@@ -11,8 +12,9 @@ const ContactContent = () => {
             <div className="contact__left-item primary-bg">
               <h3 className="text-white mb-30">Contact Information</h3>
               <p className="text-white">
-                Nullam varius, erat quis iaculis dictum, eros urna varius eros,
-                ut blandit felis odio in turpis. Quisque.
+                Have questions, feedback, or inquiries? Fill out the form below
+                to get in touch with us. Our team is here to assist you and will
+                get back to you as soon as possible.
               </p>
               <ul className="mt-40 mb-40">
                 <li>
@@ -35,10 +37,10 @@ const ContactContent = () => {
                     </svg>
                   </i>
                   <div>
-                    <span className="text-white">Call Us 7/24</span>
+                    <span className="text-white">Call Us</span>
                     <h3 className="mt-1">
-                      <Link className="text-white" href="tel:+2085550112">
-                        +208-555-0112
+                      <Link className="text-white" href="tel:+13463058999">
+                        +1 (346) 305-8999
                       </Link>
                     </h3>
                   </div>
@@ -67,10 +69,13 @@ const ContactContent = () => {
                     </svg>
                   </i>
                   <div>
-                    <span className="text-white">Make a Quote</span>
+                    <span className="text-white">Email</span>
                     <h3 className="mt-1">
-                      <Link className="text-white" href="/">
-                        info@gmail.com
+                      <Link
+                        className="text-white"
+                        href="mailto:info@example.com"
+                      >
+                        info@example.com
                       </Link>
                     </h3>
                   </div>
@@ -99,10 +104,11 @@ const ContactContent = () => {
                     </svg>
                   </i>
                   <div>
-                    <span className="text-white">Location</span>
+                    <span className="text-white">US Headquarters</span>
                     <h3 className="mt-1">
-                      <Link className="text-white" href="tel:+2085550112">
-                        4517 Washington ave.
+                      <Link className="text-white" href="#">
+                        Suite 304, 800 N King Street, Wilmington, DE 19801,
+                        United States
                       </Link>
                     </h3>
                   </div>
@@ -140,7 +146,7 @@ const ContactContent = () => {
                   data-aos-delay="200"
                   data-aos-duration="1500"
                 >
-                  Ready to Get Started?
+                  Your gateway to your seamless communication.
                 </h2>
                 <p
                   data-aos="fade-up"
@@ -148,9 +154,11 @@ const ContactContent = () => {
                   data-aos-delay="400"
                   data-aos-duration="1500"
                 >
-                  Nullam varius, erat quis iaculis dictum, eros urna varius
-                  eros, ut blandit felis odio in turpis. Quisque rhoncus, eros
-                  in auctor ultrices,
+                  Have questions, feedback, or inquiries? Fill out the form
+                  below to get in touch with us. Our team is here to assist you
+                  and will get back to you as soon as possible. Alternatively,
+                  you can reach out to us directly via phone or email. We look
+                  forward to hearing from you!
                 </p>
               </div>
               <div className="contact__form">

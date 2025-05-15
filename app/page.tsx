@@ -24,7 +24,7 @@ const page = () => {
       <ServiceTwo />
 
       <CaseTwo />
-
+      <TestimonialTwo />
       <Quote />
       <FooterTwo />
       <CustomCursor />
