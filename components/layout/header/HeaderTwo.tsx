@@ -3,10 +3,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/images/logo/logo-light.svg";
-import one from "@/public/images/menu/home1-image.jpg";
-import two from "@/public/images/menu/home2-image.jpg";
-import three from "@/public/images/menu/home3-image.jpg";
-import four from "@/public/images/menu/home4-image.jpg";
 import OffCanvasMenu from "./OffCanvasMenu";
 
 const HeaderTwo = () => {
@@ -83,9 +79,6 @@ const HeaderTwo = () => {
                     <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="about">About</Link>
-                  </li>
-                  <li>
                     <Link href="/service">Services</Link>
                     <ul className="sub-menu">
                       <li>
@@ -99,7 +92,6 @@ const HeaderTwo = () => {
                       </li>
                     </ul>
                   </li>
-
                   <li>
                     <Link href="/blog">Blog</Link>
                     <ul className="sub-menu">
@@ -111,6 +103,17 @@ const HeaderTwo = () => {
                       </li>
                       <li>
                         <Link href="blog-details">Blog Details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link href="#">About</Link>
+                    <ul className="sub-menu">
+                      <li>
+                        <Link href="about">About Us</Link>
+                      </li>
+                      <li>
+                        <Link href="team">Career</Link>
                       </li>
                     </ul>
                   </li>
@@ -144,7 +147,7 @@ const HeaderTwo = () => {
               </nav>
             </div>
             <div className="d-none d-xl-flex gap-4">
-              <Link href="contact" className="btn-one">
+              <Link href="/contact" className="btn-one">
                 Get A Quote <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
               <div className="about-three__left-item d-flex flex-wrap gap-2 align-items-center">
@@ -190,7 +193,7 @@ const HeaderTwo = () => {
                 </div>
                 <div className="info">
                   <span className="sm-font fw-600 text-white">Call Us Now</span>
-                  <h5 className="text-white">+208-555-0112</h5>
+                  <h5 className="text-white">(+91) 9900297673</h5>
                 </div>
               </div>
             </div>

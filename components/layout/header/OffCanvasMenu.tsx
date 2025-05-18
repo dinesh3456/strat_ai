@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import svgLogo from "@/public/images/logo/logo.svg";
-import two from "@/public/images/menu/home2-image.jpg";
 
 const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
@@ -44,9 +43,6 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="about">About</Link>
-            </li>
-            <li>
               <Link href="/service">Services</Link>
               <ul className="sub-menu">
                 <li>
@@ -60,7 +56,6 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                 </li>
               </ul>
             </li>
-
             <li>
               <Link href="/blog">Blog</Link>
               <ul className="sub-menu">
@@ -76,6 +71,17 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
               </ul>
             </li>
             <li>
+              <Link href="#">About</Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link href="about">About Us</Link>
+                </li>
+                <li>
+                  <Link href="team">Career</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
@@ -84,15 +90,15 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
       <ul className="info pt-40">
         <li>
           <i className="fa-solid primary-color fa-location-dot"></i>{" "}
-          <Link href="/">example@example.com</Link>
+          <Link href="/">800 N King Street</Link>
         </li>
         <li className="py-2">
           <i className="fa-solid primary-color fa-phone-volume"></i>{" "}
-          <Link href="tel:+208-6666-0112">+208-6666-0112</Link>
+          <Link href="tel:(+91) 9900297673">(+91) 9900297673</Link>
         </li>
         <li>
           <i className="fa-solid primary-color fa-paper-plane"></i>{" "}
-          <Link href="/">info@example.com</Link>
+          <Link href="/">Operations@strat1.ai</Link>
         </li>
       </ul>
       <div className="social-icon mt-20">
