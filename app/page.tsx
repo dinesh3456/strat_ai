@@ -13,19 +13,22 @@ import Quote from "@/components/containers/HomeTwo/Quote";
 import FooterTwo from "@/components/layout/footer/FooterTwo";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
+import CounterSection from "@/components/containers/HomeTwo/CounterSection";
+import Process from "@/components/containers/HomeTwo/Process";
 
 const page = () => {
   return (
     <>
       <HeaderTwo />
       <BannerTwo />
-      <Brand />
 
       <ServiceTwo />
       <AboutTwo />
-      <CaseTwo />
-      <TestimonialTwo />
-      <Quote />
+      <CounterSection />
+      {/* <TestimonialTwo /> */}
+      <Process />
+      <Brand />
+      {/* <Quote /> */}
       <FooterTwo />
       <CustomCursor />
       <ScrollProgressButton />
