@@ -106,23 +106,28 @@ const BannerTwo = () => {
                     data-delay=".3s"
                     className="text-white mb-20"
                   >
-                    TECHNOLOGY RELETED CONSULTANCY
+                    UNLOCKING GROWTH POTENTIAL
                   </h4>
                   <h1
                     data-animation="fadeInUp"
                     data-delay=".5s"
                     className="text-white"
+                    style={{ fontSize: "4.5rem", lineHeight: "1.2" }}
                   >
-                    We Convert Concepts Into Technology
+                    Thrive in a World of
+                    <br />
+                    Constant Change
                   </h1>
                   <p
                     data-animation="fadeInUp"
                     data-delay=".7s"
                     className="mt-20"
+                    style={{ maxWidth: "800px", margin: "0 auto" }}
                   >
-                    Consectetur adipiscing elit Aenean scelerisque at augue
-                    vitae consequat <br /> quisque eget congue velit in cursus
-                    leo Sed sodales
+                    By fusing advanced cloud technologies with transformative AI
+                    strategies, we unlock new dimensions of growth tailored to
+                    your vision. At Start1 Consulting, we help you redefine
+                    what's possible in today's dynamic business landscape.
                   </p>
                   <Link
                     data-animation="fadeInUp"
@@ -205,23 +210,29 @@ const BannerTwo = () => {
                     data-delay=".3s"
                     className="text-white mb-20"
                   >
-                    TECHNOLOGY RELETED CONSULTANCY
+                    INTELLIGENT TRANSFORMATION EXPERTS
                   </h4>
                   <h1
                     data-animation="fadeInUp"
                     data-delay=".5s"
                     className="text-white"
+                    style={{ fontSize: "4.5rem", lineHeight: "1.2" }}
                   >
-                    We Convert Concepts Into Technology
+                    Shaping the Future Through
+                    <br />
+                    Intelligent Transformation
                   </h1>
                   <p
                     data-animation="fadeInUp"
                     data-delay=".7s"
                     className="mt-20"
+                    style={{ maxWidth: "800px", margin: "0 auto" }}
                   >
-                    Consectetur adipiscing elit Aenean scelerisque at augue
-                    vitae consequat <br /> quisque eget congue velit in cursus
-                    leo Sed sodales
+                    At Start1 Consulting, we don't just support your digital
+                    evolution—we help you redefine what's possible. By fusing
+                    advanced cloud technologies with transformative AI
+                    strategies, we unlock new dimensions of growth tailored to
+                    your vision.
                   </p>
                   <Link
                     data-animation="fadeInUp"
@@ -304,23 +315,29 @@ const BannerTwo = () => {
                     data-delay=".3s"
                     className="text-white mb-20"
                   >
-                    TECHNOLOGY RELETED CONSULTANCY
+                    FUTURE-READY INNOVATION
                   </h4>
                   <h1
                     data-animation="fadeInUp"
                     data-delay=".5s"
                     className="text-white"
+                    style={{ fontSize: "4.5rem", lineHeight: "1.2" }}
                   >
-                    We Convert Concepts Into Technology
+                    Lead with Confidence,
+                    <br />
+                    Disrupt with Purpose
                   </h1>
                   <p
                     data-animation="fadeInUp"
                     data-delay=".7s"
                     className="mt-20"
+                    style={{ maxWidth: "800px", margin: "0 auto" }}
                   >
-                    Consectetur adipiscing elit Aenean scelerisque at augue
-                    vitae consequat <br /> quisque eget congue velit in cursus
-                    leo Sed sodales
+                    Our commitment is to future-ready innovation that empowers
+                    you to lead with confidence, disrupt with purpose, and
+                    thrive in a world of constant change. We fuse advanced cloud
+                    technologies with transformative AI strategies tailored to
+                    your vision.
                   </p>
                   <Link
                     data-animation="fadeInUp"
