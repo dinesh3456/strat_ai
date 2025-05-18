@@ -20,9 +20,9 @@ const page = () => {
       <HeaderTwo />
       <BannerTwo />
       <Brand />
-      {/* <AboutTwo /> */}
-      <ServiceTwo />
 
+      <ServiceTwo />
+      <AboutTwo />
       <CaseTwo />
       <TestimonialTwo />
       <Quote />
