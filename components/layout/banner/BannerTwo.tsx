@@ -135,7 +135,7 @@ const BannerTwo = () => {
                     href="about"
                     className="btn-one mt-50"
                   >
-                    Explore More{" "}
+                    Explore More
                     <i className="fa-regular fa-arrow-right-long"></i>
                   </Link>
                 </div>
