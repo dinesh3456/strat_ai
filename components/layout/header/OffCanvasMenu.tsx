@@ -46,13 +46,25 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
               <Link href="/service">Services</Link>
               <ul className="sub-menu">
                 <li>
-                  <Link href="service-solutions">IT Solutions</Link>
+                  <Link href="/cloud-migration">
+                    Cloud & Data Transformation
+                  </Link>
                 </li>
                 <li>
-                  <Link href="service">IT Services</Link>
+                  <Link href="/product-engineering">
+                    Product & Engineering Services
+                  </Link>
                 </li>
                 <li>
-                  <Link href="service-details">Service Details</Link>
+                  <Link href="/strategic-consulting">
+                    Strategic Consulting & Professional Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/service">All IT Services</Link>
+                </li>
+                <li>
+                  <Link href="/service-details">Service Details</Link>
                 </li>
               </ul>
             </li>
