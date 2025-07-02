@@ -17,7 +17,7 @@ const CloudMigrationSingle = () => {
               <div className="service-single__left-item">
                 <div className="image mb-50">
                   <Image
-                    src="/images/service/cloud-migration-hero.jpg"
+                    src="/images/service/service-image1.jpg"
                     alt="Cloud Migration Services"
                     width={800}
                     height={400}
