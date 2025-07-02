@@ -16,9 +16,11 @@ const CloudMigrationSingle = () => {
             <div className="col-lg-8 order-2 order-lg-1">
               <div className="service-single__left-item">
                 <div className="image mb-50">
-                  <img
+                  <Image
                     src="/images/service/cloud-migration-hero.jpg"
                     alt="Cloud Migration Services"
+                    width={800}
+                    height={400}
                     style={{
                       width: "100%",
                       height: "400px",
