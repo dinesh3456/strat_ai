@@ -482,11 +482,7 @@ const CloudMigrationSingle = () => {
                       <i className="fa-regular fa-arrow-right-long primary-color"></i>
                     </li>
                     <li>
-                      <Link href="service-details">IT Management</Link>
-                      <i className="fa-regular fa-arrow-right-long primary-color"></i>
-                    </li>
-                    <li>
-                      <Link href="service-details">Cyber Security</Link>
+                      <Link href="/ai-services">AI as a Service</Link>
                       <i className="fa-regular fa-arrow-right-long primary-color"></i>
                     </li>
                   </ul>

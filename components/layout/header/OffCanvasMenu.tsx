@@ -61,10 +61,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/service">All IT Services</Link>
-                </li>
-                <li>
-                  <Link href="/service-details">Service Details</Link>
+                  <Link href="/ai-services">AI as a Service</Link>
                 </li>
               </ul>
             </li>
@@ -114,17 +111,8 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
         </li>
       </ul>
       <div className="social-icon mt-20">
-        <Link href="/">
-          <i className="fa-brands fa-facebook-f"></i>
-        </Link>
-        <Link href="/">
-          <i className="fa-brands fa-twitter"></i>
-        </Link>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/company/strat1consulting/">
           <i className="fa-brands fa-linkedin-in"></i>
-        </Link>
-        <Link href="/">
-          <i className="fa-brands fa-youtube"></i>
         </Link>
       </div>
       <button

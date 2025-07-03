@@ -7,9 +7,11 @@ import Three from "@/public/images/shape/service-item-shape.png";
 import Four from "@/public/images/icon/service-icon1.png";
 import Five from "@/public/images/icon/service-icon2.png";
 import Six from "@/public/images/icon/service-icon3.png";
+// You'll need to add the AI service icon
+import Seven from "@/public/images/icon/service-icon4.jpg"; // AI Service Icon
 
 const ServiceTwo = () => {
-  const [isOverviewOpen, setOverviewOpen] = useState(1);
+  const [isOverviewOpen, setOverviewOpen] = useState(0);
 
   return (
     <section className="service-area pt-120 pb-120" id="service-section">
@@ -63,7 +65,7 @@ const ServiceTwo = () => {
         </div>
         <div className="row g-4">
           <div
-            className="col-lg-4 col-md-6 "
+            className="col-lg-6 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="0"
@@ -101,10 +103,10 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-4 col-md-6 "
+            className="col-lg-6 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-delay="200"
+            data-aos-delay="100"
             data-aos-duration="1000"
           >
             <div
@@ -142,10 +144,10 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-4 col-md-6 "
+            className="col-lg-6 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-delay="400"
+            data-aos-delay="200"
             data-aos-duration="1000"
           >
             <div
@@ -179,6 +181,46 @@ const ServiceTwo = () => {
                   • Event Management Solutions
                 </small>
                 <small className="d-block">• Talent Optimization</small>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item d-flex flex-column h-100 " +
+                (isOverviewOpen === 3 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(3)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={Seven} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="/ai-services">AI as a Service</Link>
+              </h4>
+              <p className="flex-grow-1">
+                Future-ready AI capabilities to keep you ahead in the digital
+                surge. We empower your business with AI-driven culture that
+                drives long-term, sustainable growth through responsible AI
+                solutions.
+              </p>
+              <div className="service-features mt-3">
+                <small className="d-block mb-1">
+                  • GenAI & LLM Development
+                </small>
+                <small className="d-block mb-1">
+                  • AI/ML Consulting & Strategy
+                </small>
+                <small className="d-block">• Intelligent AI Agents</small>
               </div>
             </div>
           </div>

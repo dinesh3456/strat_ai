@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/images/logo/logo-light.svg";
+import logo from "@/public/images/logo/logo.svg";
 import OffCanvasMenu from "./OffCanvasMenu";
 
 const HeaderTwo = () => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [searchToggle, setSearchToggle] = useState(false);
 
   const handleToggleMenu = () => {
     setToggleMenu(!toggleMenu);
@@ -43,9 +44,6 @@ const HeaderTwo = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // search toggle
-  const [searchToggle, setSearchToggle] = useState(false);
 
   const handleSearch = () => {
     setSearchToggle(!searchToggle);
@@ -95,6 +93,9 @@ const HeaderTwo = () => {
                         <Link href="/strategic-consulting">
                           Strategic Consulting & Professional Services
                         </Link>
+                      </li>
+                      <li>
+                        <Link href="/ai-services">AI as a Service</Link>
                       </li>
                     </ul>
                   </li>
@@ -166,9 +167,9 @@ const HeaderTwo = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clipPath="url(#clip0_918_1337)">
+                      <g clipPath="url(#clip0_461_205)">
                         <path
-                          d="M5.41667 4.33337H9.75L11.9167 9.75004L9.20833 11.375C10.3685 13.7275 12.2725 15.6315 14.625 16.7917L16.25 14.0834L21.6667 16.25V20.5834C21.6667 21.158 21.4384 21.7091 21.0321 22.1154C20.6257 22.5218 20.0746 22.75 19.5 22.75C15.2742 22.4932 11.2885 20.6987 8.2949 17.7051C5.3013 14.7115 3.5068 10.7258 3.25 6.50004C3.25 5.9254 3.47827 5.3743 3.8846 4.96798C4.29093 4.56165 4.84203 4.33337 5.41667 4.33337Z"
+                          d="M23.8333 19.5L23.8333 22.1667C23.8348 22.4235 23.7867 22.6781 23.6917 22.9169C23.5967 23.1557 23.4567 23.3739 23.2792 23.5589C23.1017 23.7439 22.8904 23.8921 22.6565 23.9955C22.4226 24.0989 22.1707 24.1555 21.9158 24.1625C18.4875 24.4958 15.0133 23.8408 11.9375 22.275C9.13542 20.8892 6.77708 18.8058 5.06667 16.25C3.47833 13.1258 2.82083 9.59917 3.1625 6.11833C3.16917 5.86384 3.22563 5.61251 3.32862 5.3791C3.43161 5.14568 3.57927 4.93476 3.76373 4.75723C3.94819 4.57969 4.166 4.43965 4.40438 4.3444C4.64277 4.24916 4.89712 4.20063 5.15417 4.20167H7.82083C8.2513 4.19738 8.67008 4.34507 9.00409 4.61842C9.3381 4.89177 9.5606 5.27635 9.63333 5.70167C9.76979 6.55181 10.0102 7.38378 10.3508 8.18C10.4675 8.47736 10.4932 8.80343 10.4248 8.11692C10.3563 8.4304 10.1968 8.71885 9.96583 8.94167L8.7775 10.13C10.0892 12.9725 12.1942 15.0775 15.0367 16.3892L16.225 15.2008C16.4478 14.9698 16.7363 14.8104 17.0498 14.7419C17.3632 14.6735 17.6893 14.6992 17.9867 14.8158C18.7829 15.1565 19.6148 15.3969 20.465 15.5333C20.8958 15.6071 21.2848 15.8338 21.5581 16.1743C21.8315 16.5147 21.9737 16.9405 21.9642 17.375L23.8333 19.5Z"
                           stroke="white"
                           strokeWidth="2"
                           strokeLinecap="round"
