@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "../../layout/footer/Footer";
 
 const AIServiceSingle = () => {
   const [imgTab, setImgTab] = useState(0);
