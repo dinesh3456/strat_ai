@@ -51,17 +51,10 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/product-engineering">
-                    Product & Engineering Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/strategic-consulting">
-                    Strategic Consulting & Professional Services
-                  </Link>
-                </li>
-                <li>
                   <Link href="/ai-services">AI as a Service</Link>
+                </li>
+                <li>
+                  <Link href="/managed-it-services">Managed IT Services</Link>
                 </li>
               </ul>
             </li>
@@ -107,7 +100,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
         </li>
         <li>
           <i className="fa-solid primary-color fa-paper-plane"></i>{" "}
-          <Link href="/">Operations@strat1.ai</Link>
+          <Link href="/">operations@strat1.ai</Link>
         </li>
       </ul>
       <div className="social-icon mt-20">

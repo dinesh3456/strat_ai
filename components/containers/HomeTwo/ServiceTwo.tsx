@@ -5,10 +5,9 @@ import Image from "next/image";
 import One from "@/public/images/shape/service-bg-shape.png";
 import Three from "@/public/images/shape/service-item-shape.png";
 import Four from "@/public/images/icon/service-icon1.png";
-import Five from "@/public/images/icon/service-icon2.png";
-import Six from "@/public/images/icon/service-icon3.png";
 // You'll need to add the AI service icon
 import Seven from "@/public/images/icon/service-icon4.jpg"; // AI Service Icon
+import Eight from "@/public/images/icon/service-icon5.png"; // Managed IT Services Icon
 
 const ServiceTwo = () => {
   const [isOverviewOpen, setOverviewOpen] = useState(0);
@@ -64,8 +63,9 @@ const ServiceTwo = () => {
           </h2>
         </div>
         <div className="row g-4">
+          {/* Three services in a row */}
           <div
-            className="col-lg-6 col-md-6 "
+            className="col-lg-4 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="0"
@@ -103,48 +103,7 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-          >
-            <div
-              className={
-                "service__item d-flex flex-column h-100 " +
-                (isOverviewOpen === 1 ? " active" : " ")
-              }
-              onMouseEnter={() => setOverviewOpen(1)}
-            >
-              <div className="service-shape">
-                <Image src={Three} alt="shape" priority />
-              </div>
-              <div className="service__icon">
-                <Image src={Five} alt="icon" priority />
-              </div>
-              <h4>
-                <Link href="/product-engineering">
-                  Product & Engineering Services
-                </Link>
-              </h4>
-              <p className="flex-grow-1">
-                Design, build, and scale innovative products and frameworks
-                tailored to your unique business challenges and growth goals.
-                Our engineering excellence drives digital innovation.
-              </p>
-              <div className="service-features mt-3">
-                <small className="d-block mb-1">
-                  • Custom Software Development
-                </small>
-                <small className="d-block mb-1">
-                  • API & Platform Engineering
-                </small>
-                <small className="d-block">• Quality Assurance & Testing</small>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-lg-6 col-md-6 "
+            className="col-lg-4 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="200"
@@ -153,50 +112,9 @@ const ServiceTwo = () => {
             <div
               className={
                 "service__item d-flex flex-column h-100 " +
-                (isOverviewOpen === 2 ? " active" : " ")
+                (isOverviewOpen === 1 ? " active" : " ")
               }
-              onMouseEnter={() => setOverviewOpen(2)}
-            >
-              <div className="service-shape">
-                <Image src={Three} alt="shape" priority />
-              </div>
-              <div className="service__icon">
-                <Image src={Six} alt="icon" priority />
-              </div>
-              <h4>
-                <Link href="/strategic-consulting">
-                  Strategic Consulting & Professional Services
-                </Link>
-              </h4>
-              <p className="flex-grow-1">
-                Delivering expert guidance and specialized services to optimize
-                talent, manage events, and lead business program
-                management—driving success with tailored strategies.
-              </p>
-              <div className="service-features mt-3">
-                <small className="d-block mb-1">
-                  • Business Strategy & Planning
-                </small>
-                <small className="d-block mb-1">
-                  • Event Management Solutions
-                </small>
-                <small className="d-block">• Talent Optimization</small>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            <div
-              className={
-                "service__item d-flex flex-column h-100 " +
-                (isOverviewOpen === 3 ? " active" : " ")
-              }
-              onMouseEnter={() => setOverviewOpen(3)}
+              onMouseEnter={() => setOverviewOpen(1)}
             >
               <div className="service-shape">
                 <Image src={Three} alt="shape" priority />
@@ -221,6 +139,46 @@ const ServiceTwo = () => {
                   • AI/ML Consulting & Strategy
                 </small>
                 <small className="d-block">• Intelligent AI Agents</small>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-lg-4 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item d-flex flex-column h-100 " +
+                (isOverviewOpen === 2 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(2)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={Eight} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="/managed-it-services">Managed IT Services</Link>
+              </h4>
+              <p className="flex-grow-1">
+                Scalable, flexible and fully managed IT solutions across
+                cybersecurity, risk, network, cloud, and support. Simplify your
+                IT environment while focusing on growth and customer
+                acquisition.
+              </p>
+              <div className="service-features mt-3">
+                <small className="d-block mb-1">
+                  • 24/7 IT Support & Monitoring
+                </small>
+                <small className="d-block mb-1">
+                  • Network & Security Management
+                </small>
+                <small className="d-block">• Cloud & Device Management</small>
               </div>
             </div>
           </div>

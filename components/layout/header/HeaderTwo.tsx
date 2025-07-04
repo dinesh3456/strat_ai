@@ -85,17 +85,12 @@ const HeaderTwo = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/product-engineering">
-                          Product & Engineering Services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/strategic-consulting">
-                          Strategic Consulting & Professional Services
-                        </Link>
-                      </li>
-                      <li>
                         <Link href="/ai-services">AI as a Service</Link>
+                      </li>
+                      <li>
+                        <Link href="/managed-it-services">
+                          Managed IT Services
+                        </Link>
                       </li>
                     </ul>
                   </li>

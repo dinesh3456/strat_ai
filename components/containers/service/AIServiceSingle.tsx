@@ -553,20 +553,14 @@ const AIServiceSingle = () => {
                       </Link>
                       <i className="fa-regular fa-arrow-right-long primary-color"></i>
                     </li>
-                    <li>
-                      <Link href="/product-engineering">
-                        Product & Engineering Services
-                      </Link>
-                      <i className="fa-regular fa-arrow-right-long primary-color"></i>
-                    </li>
-                    <li>
-                      <Link href="/strategic-consulting">
-                        Strategic Consulting
-                      </Link>
-                      <i className="fa-regular fa-arrow-right-long primary-color"></i>
-                    </li>
                     <li className="active">
                       <Link href="/ai-services">AI as a Service</Link>
+                      <i className="fa-regular fa-arrow-right-long primary-color"></i>
+                    </li>
+                    <li>
+                      <Link href="/managed-it-services">
+                        Managed IT Services
+                      </Link>
                       <i className="fa-regular fa-arrow-right-long primary-color"></i>
                     </li>
                   </ul>

@@ -2,10 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ModalVideo from "react-modal-video";
 
-// You'll need to add these images to your public/images/service/ directory
-const CloudMigrationSingle = () => {
+const ManagedITServicesSingle = () => {
   const [imgTab, setImgTab] = useState(0);
 
   return (
@@ -17,8 +15,8 @@ const CloudMigrationSingle = () => {
               <div className="service-single__left-item">
                 <div className="image mb-50">
                   <Image
-                    src="/images/service/service-image1.jpg"
-                    alt="Cloud Migration Services"
+                    src="/images/service/managed-it-services-hero.jpg"
+                    alt="Managed IT Services"
                     width={800}
                     height={400}
                     style={{
@@ -29,32 +27,161 @@ const CloudMigrationSingle = () => {
                   />
                 </div>
 
-                <h3 className="title mb-30">Cloud & Data Transformation</h3>
+                <h3 className="title mb-30">Managed IT Services</h3>
                 <h4 className="mb-20" style={{ color: "#3C72FC" }}>
-                  Reimagine your business for the cloud computing era
+                  Scalable, flexible and fully managed IT solutions
                 </h4>
 
                 <p className="mb-20">
-                  Each and every customer's journey to the cloud is unique and
-                  needs a tailored approach. We acknowledge that building secure
-                  and optimized cloud environments can be challenging,
-                  especially when time and knowledge are not readily available.
+                  Managed IT services across cybersecurity, risk, network,
+                  cloud, cloud calling, governance and support. Our
+                  comprehensive approach simplifies your IT environment, helping
+                  your organization better focus on customer acquisition and
+                  growth through expert staff, leading-edge technology and
+                  innovative processes.
+                </p>
+
+                <p className="mb-20">
+                  Modern digital demands require an IT infrastructure that is
+                  secure, scalable and always accessible. With Strat1 Managed IT
+                  Services, you can rely on enterprise-grade technology, expert
+                  management and around-the-clock support to maintain peak
+                  performance across your systems -- all while reducing
+                  operational risk and costs.
                 </p>
 
                 <p className="mb-40">
-                  We offer a wide array of flexible solutions to suit every
-                  customer's needs. Our cloud transformation services enable
-                  organizations to leverage the full potential of cloud
-                  computing while ensuring security, scalability, and
-                  cost-effectiveness.
+                  Our team delivers tailored IT management services that empower
+                  businesses to focus on growth, innovation and customer
+                  experiences while we handle the complexity behind the scenes.
                 </p>
 
-                {/* Cloud Transformation Process */}
+                {/* Core Managed IT Services */}
+                <h4 className="mb-30">Core Managed IT Services</h4>
+                <div className="row g-4 mb-40">
+                  <div className="col-md-6">
+                    <div
+                      className="service-card p-4"
+                      style={{
+                        border: "1px solid #e9ecef",
+                        borderRadius: "10px",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="icon mb-3">
+                        <i
+                          className="fa-solid fa-network-wired"
+                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                        ></i>
+                      </div>
+                      <h5 className="mb-3">Network Management and Security</h5>
+                      <p className="small">
+                        Secure your network with real-time monitoring and threat
+                        detection. Our comprehensive network management ensures
+                        optimal performance and security.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div
+                      className="service-card p-4"
+                      style={{
+                        border: "1px solid #e9ecef",
+                        borderRadius: "10px",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="icon mb-3">
+                        <i
+                          className="fa-solid fa-cloud"
+                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                        ></i>
+                      </div>
+                      <h5 className="mb-3">Cloud Hosting and Migration</h5>
+                      <p className="small">
+                        Seamlessly move to the cloud or optimize your existing
+                        cloud infrastructure. Expert cloud management for
+                        maximum efficiency and scalability.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div
+                      className="service-card p-4"
+                      style={{
+                        border: "1px solid #e9ecef",
+                        borderRadius: "10px",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="icon mb-3">
+                        <i
+                          className="fa-solid fa-laptop"
+                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                        ></i>
+                      </div>
+                      <h5 className="mb-3">Endpoint Device Management</h5>
+                      <p className="small">
+                        Keep your workforce connected and protected with fully
+                        managed devices. Complete lifecycle management for all
+                        your endpoint devices.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div
+                      className="service-card p-4"
+                      style={{
+                        border: "1px solid #e9ecef",
+                        borderRadius: "10px",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="icon mb-3">
+                        <i
+                          className="fa-solid fa-headset"
+                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                        ></i>
+                      </div>
+                      <h5 className="mb-3">IT Helpdesk Services</h5>
+                      <p className="small">
+                        Count on 24/7 expert technical support for rapid issue
+                        resolution. Multi-level support structure for all your
+                        IT needs.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div
+                      className="service-card p-4"
+                      style={{
+                        border: "1px solid #e9ecef",
+                        borderRadius: "10px",
+                        height: "100%",
+                      }}
+                    >
+                      <div className="icon mb-3">
+                        <i
+                          className="fa-solid fa-shield-alt"
+                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                        ></i>
+                      </div>
+                      <h5 className="mb-3">Compliance and Risk Management</h5>
+                      <p className="small">
+                        Meet regulatory requirements with confidence through
+                        best-in-class IT governance frameworks and comprehensive
+                        risk assessment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Managed IT Process */}
                 <div className="row g-4 mt-40 mb-40">
                   <div className="col-12">
-                    <h4 className="mb-30">Our Cloud Transformation Process</h4>
+                    <h4 className="mb-30">Our Managed IT Process</h4>
                     <div className="row g-4">
-                      <div className="col-md-4">
+                      <div className="col-md-3">
                         <div
                           className="process-item text-center p-4"
                           style={{
@@ -68,14 +195,14 @@ const CloudMigrationSingle = () => {
                               style={{ fontSize: "2rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Assessment</h5>
+                          <h5 className="mb-2">Assessment & Planning</h5>
                           <p className="small">
-                            Comprehensive evaluation of your current
-                            infrastructure and readiness
+                            Comprehensive evaluation of your current IT
+                            infrastructure and requirements
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-3">
                         <div
                           className="process-item text-center p-4"
                           style={{
@@ -85,18 +212,18 @@ const CloudMigrationSingle = () => {
                         >
                           <div className="icon mb-3">
                             <i
-                              className="fa-solid fa-drafting-compass"
+                              className="fa-solid fa-cogs"
                               style={{ fontSize: "2rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Strategy & Planning</h5>
+                          <h5 className="mb-2">Implementation</h5>
                           <p className="small">
-                            Customized roadmap and architecture design for your
-                            cloud journey
+                            Seamless deployment of managed services with minimal
+                            disruption
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-3">
                         <div
                           className="process-item text-center p-4"
                           style={{
@@ -106,14 +233,35 @@ const CloudMigrationSingle = () => {
                         >
                           <div className="icon mb-3">
                             <i
-                              className="fa-solid fa-rocket"
+                              className="fa-solid fa-eye"
                               style={{ fontSize: "2rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Migration & Optimization</h5>
+                          <h5 className="mb-2">Monitoring & Support</h5>
                           <p className="small">
-                            Seamless migration with continuous optimization and
-                            monitoring
+                            24/7 proactive monitoring and expert support for
+                            optimal performance
+                          </p>
+                        </div>
+                      </div>
+                      <div className="col-md-3">
+                        <div
+                          className="process-item text-center p-4"
+                          style={{
+                            background: "#f8f9ff",
+                            borderRadius: "10px",
+                          }}
+                        >
+                          <div className="icon mb-3">
+                            <i
+                              className="fa-solid fa-chart-line"
+                              style={{ fontSize: "2rem", color: "#3C72FC" }}
+                            ></i>
+                          </div>
+                          <h5 className="mb-2">Optimization</h5>
+                          <p className="small">
+                            Continuous improvement and optimization for enhanced
+                            efficiency
                           </p>
                         </div>
                       </div>
@@ -121,40 +269,37 @@ const CloudMigrationSingle = () => {
                   </div>
                 </div>
 
-                {/* Service Features */}
+                {/* Why Managed Services */}
                 <div className="row g-5 mt-40 mb-40 align-items-center">
                   <div className="col-lg-6">
-                    <h4 className="mb-20">Key Service Areas</h4>
+                    <h4 className="mb-20">Why Choose Managed IT Services</h4>
                     <ul className="service-features">
                       <li className="mb-15">
                         <i className="fa-solid fa-check"></i>
-                        <strong>Cloud Strategy & Consulting</strong> -
-                        Comprehensive cloud adoption planning
+                        <strong>Reduction of Incidents</strong> - Proactive
+                        monitoring and maintenance to prevent issues before they
+                        occur
                       </li>
                       <li className="mb-15">
                         <i className="fa-solid fa-check"></i>
-                        <strong>Infrastructure Migration</strong> - Seamless
-                        movement of applications and data
+                        <strong>Improved End User Experience</strong> - Enhanced
+                        system performance and reliability for better
+                        productivity
                       </li>
                       <li className="mb-15">
                         <i className="fa-solid fa-check"></i>
-                        <strong>Data Analytics & AI</strong> - Advanced
-                        analytics and machine learning capabilities
+                        <strong>Improvement of CSAT</strong> - Higher customer
+                        satisfaction through reliable IT services
                       </li>
                       <li className="mb-15">
                         <i className="fa-solid fa-check"></i>
-                        <strong>Security & Compliance</strong> -
-                        Enterprise-grade security frameworks
+                        <strong>Improved TAT</strong> - Faster turnaround times
+                        for issue resolution and service delivery
                       </li>
                       <li className="mb-15">
                         <i className="fa-solid fa-check"></i>
-                        <strong>Cost Optimization</strong> - Intelligent
-                        resource management and cost control
-                      </li>
-                      <li className="mb-15">
-                        <i className="fa-solid fa-check"></i>
-                        <strong>24/7 Support & Monitoring</strong> - Continuous
-                        operational excellence
+                        <strong>Cost Optimization</strong> - Reduced operational
+                        costs through efficient resource management
                       </li>
                     </ul>
                   </div>
@@ -164,22 +309,8 @@ const CloudMigrationSingle = () => {
                       style={{ background: "#f8f9ff", borderRadius: "15px" }}
                     >
                       <h5 className="mb-3" style={{ color: "#3C72FC" }}>
-                        Cloud Transformation Benefits
+                        Managed IT Service Benefits
                       </h5>
-                      <div className="benefit-item d-flex align-items-center mb-3">
-                        <i
-                          className="fa-solid fa-arrow-up"
-                          style={{ color: "#28a745", marginRight: "10px" }}
-                        ></i>
-                        <span>Increased Scalability & Flexibility</span>
-                      </div>
-                      <div className="benefit-item d-flex align-items-center mb-3">
-                        <i
-                          className="fa-solid fa-dollar-sign"
-                          style={{ color: "#28a745", marginRight: "10px" }}
-                        ></i>
-                        <span>Reduced Infrastructure Costs</span>
-                      </div>
                       <div className="benefit-item d-flex align-items-center mb-3">
                         <i
                           className="fa-solid fa-shield-alt"
@@ -192,98 +323,36 @@ const CloudMigrationSingle = () => {
                           className="fa-solid fa-clock"
                           style={{ color: "#28a745", marginRight: "10px" }}
                         ></i>
-                        <span>Faster Time-to-Market</span>
+                        <span>24/7 Monitoring & Support</span>
+                      </div>
+                      <div className="benefit-item d-flex align-items-center mb-3">
+                        <i
+                          className="fa-solid fa-dollar-sign"
+                          style={{ color: "#28a745", marginRight: "10px" }}
+                        ></i>
+                        <span>Predictable IT Costs</span>
+                      </div>
+                      <div className="benefit-item d-flex align-items-center mb-3">
+                        <i
+                          className="fa-solid fa-users"
+                          style={{ color: "#28a745", marginRight: "10px" }}
+                        ></i>
+                        <span>Expert IT Team Access</span>
                       </div>
                       <div className="benefit-item d-flex align-items-center">
                         <i
-                          className="fa-solid fa-chart-line"
+                          className="fa-solid fa-rocket"
                           style={{ color: "#28a745", marginRight: "10px" }}
                         ></i>
-                        <span>Improved Business Agility</span>
+                        <span>Focus on Core Business</span>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                {/* Cloud Platforms */}
-                <div className="cloud-platforms mb-40">
-                  <h4 className="mb-30">Supported Cloud Platforms</h4>
-                  <div className="row g-4">
-                    <div className="col-md-4">
-                      <div
-                        className="platform-card text-center p-4"
-                        style={{
-                          border: "2px solid #e9ecef",
-                          borderRadius: "10px",
-                        }}
-                      >
-                        <div className="platform-icon mb-3">
-                          <i
-                            className="fa-brands fa-aws"
-                            style={{ fontSize: "3rem", color: "#FF9900" }}
-                          ></i>
-                        </div>
-                        <h6>Amazon Web Services</h6>
-                        <p className="small text-muted">
-                          Comprehensive AWS migration and optimization services
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div
-                        className="platform-card text-center p-4"
-                        style={{
-                          border: "2px solid #e9ecef",
-                          borderRadius: "10px",
-                        }}
-                      >
-                        <div className="platform-icon mb-3">
-                          <i
-                            className="fa-brands fa-microsoft"
-                            style={{ fontSize: "3rem", color: "#0078D4" }}
-                          ></i>
-                        </div>
-                        <h6>Microsoft Azure</h6>
-                        <p className="small text-muted">
-                          Enterprise Azure cloud solutions and migrations
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div
-                        className="platform-card text-center p-4"
-                        style={{
-                          border: "2px solid #e9ecef",
-                          borderRadius: "10px",
-                        }}
-                      >
-                        <div className="platform-icon mb-3">
-                          <i
-                            className="fa-brands fa-google"
-                            style={{ fontSize: "3rem", color: "#4285F4" }}
-                          ></i>
-                        </div>
-                        <h6>Google Cloud Platform</h6>
-                        <p className="small text-muted">
-                          GCP infrastructure and data analytics solutions
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="mb-40">
-                  Our experienced team ensures a smooth transition to the cloud
-                  while maintaining business continuity. We provide end-to-end
-                  support from initial assessment to post-migration
-                  optimization, ensuring your organization realizes the full
-                  benefits of cloud transformation.
-                </p>
 
                 <h3 className="title mb-30">Frequently Asked Questions</h3>
                 <p className="mb-30">
-                  Get answers to common questions about our cloud migration and
-                  transformation services.
+                  Get answers to common questions about our managed IT services.
                 </p>
 
                 <div className="accordion" id="accordionExample">
@@ -306,7 +375,7 @@ const CloudMigrationSingle = () => {
                         }
                         onClick={() => setImgTab(imgTab === 0 ? -1 : 0)}
                       >
-                        How long does a typical cloud migration take?
+                        What is included in your managed IT services?
                       </button>
                     </h2>
                     <div
@@ -319,11 +388,11 @@ const CloudMigrationSingle = () => {
                     >
                       <div className="accordion-body">
                         <p>
-                          The timeline varies depending on the complexity and
-                          size of your infrastructure. Simple migrations can
-                          take 3-6 months, while complex enterprise migrations
-                          may take 12-18 months. We provide detailed timelines
-                          during our assessment phase.
+                          Our managed IT services include network management and
+                          security, cloud hosting and migration, endpoint device
+                          management, 24/7 IT helpdesk services, compliance and
+                          risk management, cybersecurity, and ongoing system
+                          optimization.
                         </p>
                       </div>
                     </div>
@@ -348,7 +417,7 @@ const CloudMigrationSingle = () => {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        What about data security during migration?
+                        How do you ensure business continuity?
                       </button>
                     </h2>
                     <div
@@ -361,11 +430,11 @@ const CloudMigrationSingle = () => {
                     >
                       <div className="accordion-body">
                         <p>
-                          Security is our top priority. We implement end-to-end
-                          encryption, secure transfer protocols, and
-                          comprehensive access controls. Our migration process
-                          follows industry best practices and compliance
-                          requirements like GDPR, HIPAA, and SOC 2.
+                          We ensure business continuity through proactive
+                          monitoring, redundant systems, comprehensive backup
+                          solutions, disaster recovery planning, and 24/7
+                          support. Our approach minimizes downtime and maintains
+                          critical business operations.
                         </p>
                       </div>
                     </div>
@@ -377,7 +446,7 @@ const CloudMigrationSingle = () => {
                     data-aos-delay="400"
                     data-aos-duration="1500"
                   >
-                    <h2 className="accordion-header" id="headingthree">
+                    <h2 className="accordion-header" id="headingThree">
                       <button
                         className={
                           (imgTab == 2 ? "  " : " collapsed") +
@@ -386,28 +455,28 @@ const CloudMigrationSingle = () => {
                         onClick={() => setImgTab(imgTab === 2 ? -1 : 2)}
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapsethree"
+                        data-bs-target="#collapseThree"
                         aria-expanded="false"
-                        aria-controls="collapsethree"
+                        aria-controls="collapseThree"
                       >
-                        How do you ensure minimal downtime during migration?
+                        What are your response times for IT issues?
                       </button>
                     </h2>
                     <div
-                      id="collapsethree"
+                      id="collapseThree"
                       className={`accordion-collapse collapse${
                         imgTab === 2 ? " show " : ""
                       }`}
-                      aria-labelledby="headingthree"
+                      aria-labelledby="headingThree"
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
                         <p>
-                          We use proven migration strategies like phased
-                          approaches, blue-green deployments, and real-time data
-                          synchronization to minimize downtime. Most migrations
-                          can be completed with less than 4 hours of downtime,
-                          often during planned maintenance windows.
+                          Our response times vary by severity level: Critical
+                          issues receive immediate response (within 15 minutes),
+                          high priority issues within 1 hour, medium priority
+                          within 4 hours, and low priority within 24 hours. We
+                          maintain detailed SLAs for all service levels.
                         </p>
                       </div>
                     </div>
@@ -432,7 +501,7 @@ const CloudMigrationSingle = () => {
                         aria-expanded="false"
                         aria-controls="collapseFour"
                       >
-                        What post-migration support do you provide?
+                        How do you handle data security and compliance?
                       </button>
                     </h2>
                     <div
@@ -445,11 +514,11 @@ const CloudMigrationSingle = () => {
                     >
                       <div className="accordion-body">
                         <p>
-                          We provide comprehensive post-migration support
-                          including 24/7 monitoring, performance optimization,
-                          cost management, security updates, and ongoing
-                          consultation. Our support packages are tailored to
-                          your specific needs and SLA requirements.
+                          We implement multi-layered security measures including
+                          encryption, access controls, regular security audits,
+                          and compliance monitoring. Our services meet industry
+                          standards like ISO 27001, SOC 2, GDPR, and other
+                          regulatory requirements specific to your industry.
                         </p>
                       </div>
                     </div>
@@ -463,7 +532,7 @@ const CloudMigrationSingle = () => {
                 <div className="item sub-bg mb-30">
                   <h4 className="mb-20">Our Services</h4>
                   <ul className="category service-category">
-                    <li className="active">
+                    <li>
                       <Link href="/cloud-migration">
                         Cloud & Data Transformation
                       </Link>
@@ -473,7 +542,7 @@ const CloudMigrationSingle = () => {
                       <Link href="/ai-services">AI as a Service</Link>
                       <i className="fa-regular fa-arrow-right-long primary-color"></i>
                     </li>
-                    <li>
+                    <li className="active">
                       <Link href="/managed-it-services">
                         Managed IT Services
                       </Link>
@@ -483,7 +552,7 @@ const CloudMigrationSingle = () => {
                 </div>
 
                 <div className="item sub-bg mb-30">
-                  <h4 className="mb-20">Migration Readiness</h4>
+                  <h4 className="mb-20">IT Readiness Assessment</h4>
                   <div className="readiness-checklist">
                     <div className="checklist-item d-flex align-items-center mb-3">
                       <i
@@ -491,8 +560,15 @@ const CloudMigrationSingle = () => {
                         style={{ color: "#28a745", marginRight: "10px" }}
                       ></i>
                       <span className="small">
-                        Current Infrastructure Assessment
+                        Current IT Infrastructure Assessment
                       </span>
+                    </div>
+                    <div className="checklist-item d-flex align-items-center mb-3">
+                      <i
+                        className="fa-solid fa-circle-check"
+                        style={{ color: "#28a745", marginRight: "10px" }}
+                      ></i>
+                      <span className="small">Security & Compliance Audit</span>
                     </div>
                     <div className="checklist-item d-flex align-items-center mb-3">
                       <i
@@ -500,7 +576,7 @@ const CloudMigrationSingle = () => {
                         style={{ color: "#28a745", marginRight: "10px" }}
                       ></i>
                       <span className="small">
-                        Security & Compliance Review
+                        Service Level Agreement Design
                       </span>
                     </div>
                     <div className="checklist-item d-flex align-items-center mb-3">
@@ -508,23 +584,17 @@ const CloudMigrationSingle = () => {
                         className="fa-solid fa-circle-check"
                         style={{ color: "#28a745", marginRight: "10px" }}
                       ></i>
-                      <span className="small">Cost-Benefit Analysis</span>
-                    </div>
-                    <div className="checklist-item d-flex align-items-center mb-3">
-                      <i
-                        className="fa-solid fa-circle-check"
-                        style={{ color: "#28a745", marginRight: "10px" }}
-                      ></i>
-                      <span className="small">Migration Strategy Planning</span>
+                      <span className="small">Managed Service Roadmap</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="item sub-bg mb-30">
-                  <h4 className="mb-20">Contact Our Experts</h4>
+                  <h4 className="mb-20">Contact Our IT Experts</h4>
                   <p className="mb-20 small">
-                    Ready to start your cloud transformation journey? Our
-                    certified cloud architects are here to help.
+                    Ready to simplify your IT management? Our certified IT
+                    specialists are here to help you optimize your technology
+                    infrastructure.
                   </p>
                   <div className="contact-info">
                     <div className="contact-item d-flex align-items-center mb-3">
@@ -539,11 +609,11 @@ const CloudMigrationSingle = () => {
                         className="fa-solid fa-envelope"
                         style={{ color: "#3C72FC", marginRight: "10px" }}
                       ></i>
-                      <span className="small">Operations@strat1.ai</span>
+                      <span className="small">operations@strat1.ai</span>
                     </div>
                   </div>
                   <Link href="/contact" className="btn-one btn-sm w-100 mt-3">
-                    Get Free Consultation
+                    Get Free IT Assessment
                   </Link>
                 </div>
               </div>
@@ -555,4 +625,4 @@ const CloudMigrationSingle = () => {
   );
 };
 
-export default CloudMigrationSingle;
+export default ManagedITServicesSingle;
