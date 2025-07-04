@@ -39,11 +39,13 @@ const ContactContent = () => {
                   <div>
                     <span className="text-white">Call Us</span>
                     <h4 className="mt-1">
+                      <span className="text-white me-2">USA:</span>
                       <Link className="text-white" href="tel:+13463058999">
                         +1 (346) 305-8999
                       </Link>
                     </h4>
                     <h4 className="mt-1">
+                      <span className="text-white  me-2">IND:</span>
                       <Link className="text-white" href="tel:+919900297673">
                         +91 9900297673
                       </Link>
@@ -125,18 +127,6 @@ const ContactContent = () => {
                 >
                   Your gateway to your seamless communication.
                 </h2>
-                <p
-                  data-aos="fade-up"
-                  className=" mt-3"
-                  data-aos-delay="400"
-                  data-aos-duration="1500"
-                >
-                  Have questions, feedback, or inquiries? Fill out the form
-                  below to get in touch with us. Our team is here to assist you
-                  and will get back to you as soon as possible. Alternatively,
-                  you can reach out to us directly via phone or email. We look
-                  forward to hearing from you!
-                </p>
               </div>
               <div className="contact__form">
                 <form action="#">

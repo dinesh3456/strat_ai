@@ -57,8 +57,9 @@ const FooterTwo = () => {
               <Image src={Logo} alt="Image" priority />
             </Link>
             <p>
-              Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a
-              lacinia curabitur lacinia mollis
+              We help businesses scale smarter, move faster, and stay
+              secure-leveraging cutting-edge cloud technologies to turn bold
+              ideas into reality.
             </p>
             <div className="social-icon">
               <Link href="/">
@@ -162,7 +163,7 @@ const FooterTwo = () => {
           >
             <h3 className="footer-title">Contact Us</h3>
             <p className="mb-20">
-              4517 Washington Ave. Manchester, Kentucky 39495
+              Suite 304, 800 N King Street, Wilmington, DE 19801, United States
             </p>
             <ul className="footer-contact">
               <li>
@@ -176,7 +177,7 @@ const FooterTwo = () => {
                 <i className="fa-duotone fa-phone"></i>
                 <div className="info">
                   <h5>Phone Call:</h5>
-                  <p>208-6666-0112, 308-5555-0113</p>
+                  <p>+1 (346) 305-8999, +91 9900297673</p>
                 </div>
               </li>
             </ul>

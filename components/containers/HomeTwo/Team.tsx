@@ -3,6 +3,7 @@ import Image from "next/image";
 import One from "@/public/images/team/team-image1.jpg";
 import Two from "@/public/images/team/team-image2.jpg";
 import Three from "@/public/images/team/team-image3.jpg";
+import Four from "@/public/images/team/team-image4.jpg";
 
 const Team = () => {
   return (
@@ -53,15 +54,27 @@ const Team = () => {
           </h2>
         </div>
         <div className="row g-4">
+          {/* Team Member 1 */}
           <div
-            className="col-xl-4 col-lg-6 col-md-6 "
+            className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-duration="1500"
           >
             <div className="team__item">
               <div className="image">
-                <Image src={One} alt="Image" priority />
+                <Image
+                  src={One}
+                  alt="Kawser Ahmed"
+                  priority
+                  width={250}
+                  height={250}
+                  style={{
+                    width: "100%",
+                    height: "250px",
+                    objectFit: "cover",
+                  }}
+                />
               </div>
               <div className="team__content">
                 <h4>
@@ -88,69 +101,42 @@ const Team = () => {
                       <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-pinterest-p"></i>
+                    </Link>
+                  </li>
                 </ul>
-                <button>
-                  <i className="fa-sharp fa-light fa-share-nodes"></i>
-                </button>
               </div>
             </div>
           </div>
+
+          {/* Team Member 2 */}
           <div
-            className="col-xl-4 col-lg-6 col-md-6 "
+            className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="1500"
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Two} alt="Image" priority />
+                <Image
+                  src={Two}
+                  alt="Sarah Johnson"
+                  priority
+                  width={250}
+                  height={250}
+                  style={{
+                    width: "100%",
+                    height: "250px",
+                    objectFit: "cover",
+                  }}
+                />
               </div>
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Karniz Fatema
-                  </Link>
-                </h4>
-                <span className="text-white">Customer Support</span>
-              </div>
-              <div className="team__share">
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                </ul>
-                <button>
-                  <i className="fa-sharp fa-light fa-share-nodes"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-xl-4 col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1500"
-          >
-            <div className="team__item">
-              <div className="image">
-                <Image src={Three} alt="Image" priority />
-              </div>
-              <div className="team__content">
-                <h4>
-                  <Link className="text-white" href="team-details">
-                    Alex Pranto
+                    Sarah Johnson
                   </Link>
                 </h4>
                 <span className="text-white">UI/UX Designer</span>
@@ -172,10 +158,126 @@ const Team = () => {
                       <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-pinterest-p"></i>
+                    </Link>
+                  </li>
                 </ul>
-                <button>
-                  <i className="fa-sharp fa-light fa-share-nodes"></i>
-                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Team Member 3 */}
+          <div
+            className="col-xl-3 col-lg-6 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image
+                  src={Three}
+                  alt="Mike Chen"
+                  priority
+                  width={250}
+                  height={250}
+                  style={{
+                    width: "100%",
+                    height: "250px",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                    Mike Chen
+                  </Link>
+                </h4>
+                <span className="text-white">Frontend Developer</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-pinterest-p"></i>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Team Member 4 */}
+          <div
+            className="col-xl-3 col-lg-6 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image
+                  src={Four}
+                  alt="Emma Davis"
+                  priority
+                  width={250}
+                  height={250}
+                  style={{
+                    width: "100%",
+                    height: "250px",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                    Emma Davis
+                  </Link>
+                </h4>
+                <span className="text-white">Project Manager</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-pinterest-p"></i>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
