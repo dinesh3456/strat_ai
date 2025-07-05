@@ -56,118 +56,196 @@ const ManagedITServicesSingle = () => {
                   experiences while we handle the complexity behind the scenes.
                 </p>
 
+                {/* Five Building Blocks Diagram */}
+                <div className="row g-4 mb-50">
+                  <div className="col-12">
+                    <h4 className="mb-30 text-center">
+                      Five Building Blocks of Next-Gen Managed Services
+                    </h4>
+                    <div
+                      className="building-blocks-container text-center"
+                      style={{
+                        background: "#f8f9ff",
+                        borderRadius: "20px",
+                        padding: "30px",
+                      }}
+                    >
+                      <Image
+                        src="/images/service/five-building-blocks-diagram.png"
+                        alt="Five Building Blocks of Next-Gen Managed Services"
+                        width={600}
+                        height={400}
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          maxWidth: "600px",
+                          borderRadius: "15px",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
                 {/* Core Managed IT Services */}
                 <h4 className="mb-30">Core Managed IT Services</h4>
                 <div className="row g-4 mb-40">
-                  <div className="col-md-6">
+                  {/* First Row - 3 Cards */}
+                  <div className="col-lg-4 col-md-6">
                     <div
-                      className="service-card p-4"
+                      className="service-card p-4 h-100"
                       style={{
                         border: "1px solid #e9ecef",
-                        borderRadius: "10px",
-                        height: "100%",
+                        borderRadius: "15px",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
                       }}
                     >
                       <div className="icon mb-3">
                         <i
                           className="fa-solid fa-network-wired"
-                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                          style={{ fontSize: "2.5rem", color: "#3C72FC" }}
                         ></i>
                       </div>
-                      <h5 className="mb-3">Network Management and Security</h5>
-                      <p className="small">
+                      <h5
+                        className="mb-3"
+                        style={{ color: "#333", fontWeight: "600" }}
+                      >
+                        Network Management and Security
+                      </h5>
+                      <p
+                        className="small"
+                        style={{ color: "#666", lineHeight: "1.6" }}
+                      >
                         Secure your network with real-time monitoring and threat
                         detection. Our comprehensive network management ensures
                         optimal performance and security.
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-4 col-md-6">
                     <div
-                      className="service-card p-4"
+                      className="service-card p-4 h-100"
                       style={{
                         border: "1px solid #e9ecef",
-                        borderRadius: "10px",
-                        height: "100%",
+                        borderRadius: "15px",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
                       }}
                     >
                       <div className="icon mb-3">
                         <i
                           className="fa-solid fa-cloud"
-                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                          style={{ fontSize: "2.5rem", color: "#3C72FC" }}
                         ></i>
                       </div>
-                      <h5 className="mb-3">Cloud Hosting and Migration</h5>
-                      <p className="small">
+                      <h5
+                        className="mb-3"
+                        style={{ color: "#333", fontWeight: "600" }}
+                      >
+                        Cloud Hosting and Migration
+                      </h5>
+                      <p
+                        className="small"
+                        style={{ color: "#666", lineHeight: "1.6" }}
+                      >
                         Seamlessly move to the cloud or optimize your existing
                         cloud infrastructure. Expert cloud management for
                         maximum efficiency and scalability.
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-4 col-md-6">
                     <div
-                      className="service-card p-4"
+                      className="service-card p-4 h-100"
                       style={{
                         border: "1px solid #e9ecef",
-                        borderRadius: "10px",
-                        height: "100%",
+                        borderRadius: "15px",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
                       }}
                     >
                       <div className="icon mb-3">
                         <i
                           className="fa-solid fa-laptop"
-                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                          style={{ fontSize: "2.5rem", color: "#3C72FC" }}
                         ></i>
                       </div>
-                      <h5 className="mb-3">Endpoint Device Management</h5>
-                      <p className="small">
+                      <h5
+                        className="mb-3"
+                        style={{ color: "#333", fontWeight: "600" }}
+                      >
+                        Endpoint Device Management
+                      </h5>
+                      <p
+                        className="small"
+                        style={{ color: "#666", lineHeight: "1.6" }}
+                      >
                         Keep your workforce connected and protected with fully
                         managed devices. Complete lifecycle management for all
                         your endpoint devices.
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+
+                  {/* Second Row - 2 Cards Centered */}
+                  <div className="col-lg-6 col-md-6">
                     <div
-                      className="service-card p-4"
+                      className="service-card p-4 h-100"
                       style={{
                         border: "1px solid #e9ecef",
-                        borderRadius: "10px",
-                        height: "100%",
+                        borderRadius: "15px",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
                       }}
                     >
                       <div className="icon mb-3">
                         <i
                           className="fa-solid fa-headset"
-                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                          style={{ fontSize: "2.5rem", color: "#3C72FC" }}
                         ></i>
                       </div>
-                      <h5 className="mb-3">IT Helpdesk Services</h5>
-                      <p className="small">
+                      <h5
+                        className="mb-3"
+                        style={{ color: "#333", fontWeight: "600" }}
+                      >
+                        IT Helpdesk Services
+                      </h5>
+                      <p
+                        className="small"
+                        style={{ color: "#666", lineHeight: "1.6" }}
+                      >
                         Count on 24/7 expert technical support for rapid issue
                         resolution. Multi-level support structure for all your
                         IT needs.
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-6 col-md-6">
                     <div
-                      className="service-card p-4"
+                      className="service-card p-4 h-100"
                       style={{
                         border: "1px solid #e9ecef",
-                        borderRadius: "10px",
-                        height: "100%",
+                        borderRadius: "15px",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
                       }}
                     >
                       <div className="icon mb-3">
                         <i
                           className="fa-solid fa-shield-alt"
-                          style={{ fontSize: "2rem", color: "#3C72FC" }}
+                          style={{ fontSize: "2.5rem", color: "#3C72FC" }}
                         ></i>
                       </div>
-                      <h5 className="mb-3">Compliance and Risk Management</h5>
-                      <p className="small">
+                      <h5
+                        className="mb-3"
+                        style={{ color: "#333", fontWeight: "600" }}
+                      >
+                        Compliance and Risk Management
+                      </h5>
+                      <p
+                        className="small"
+                        style={{ color: "#666", lineHeight: "1.6" }}
+                      >
                         Meet regulatory requirements with confidence through
                         best-in-class IT governance frameworks and comprehensive
                         risk assessment.
@@ -176,90 +254,144 @@ const ManagedITServicesSingle = () => {
                   </div>
                 </div>
 
-                {/* Managed IT Process */}
+                {/* Managed IT Process - FIXED ALIGNMENT */}
                 <div className="row g-4 mt-40 mb-40">
                   <div className="col-12">
-                    <h4 className="mb-30">Our Managed IT Process</h4>
+                    <h4 className="mb-30 text-center">
+                      Our Managed IT Process
+                    </h4>
                     <div className="row g-4">
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-sm-6">
                         <div
-                          className="process-item text-center p-4"
+                          className="process-item text-center p-4 h-100 d-flex flex-column"
                           style={{
                             background: "#f8f9ff",
-                            borderRadius: "10px",
+                            borderRadius: "15px",
+                            border: "2px solid #e9ecef",
+                            minHeight: "280px",
                           }}
                         >
                           <div className="icon mb-3">
                             <i
                               className="fa-solid fa-search"
-                              style={{ fontSize: "2rem", color: "#3C72FC" }}
+                              style={{ fontSize: "3rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Assessment & Planning</h5>
-                          <p className="small">
+                          <h5
+                            className="mb-3"
+                            style={{ color: "#333", fontWeight: "600" }}
+                          >
+                            Assessment & Planning
+                          </h5>
+                          <p
+                            className="small flex-grow-1 d-flex align-items-center"
+                            style={{
+                              color: "#666",
+                              lineHeight: "1.5",
+                            }}
+                          >
                             Comprehensive evaluation of your current IT
                             infrastructure and requirements
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-sm-6">
                         <div
-                          className="process-item text-center p-4"
+                          className="process-item text-center p-4 h-100 d-flex flex-column"
                           style={{
                             background: "#f8f9ff",
-                            borderRadius: "10px",
+                            borderRadius: "15px",
+                            border: "2px solid #e9ecef",
+                            minHeight: "280px",
                           }}
                         >
                           <div className="icon mb-3">
                             <i
                               className="fa-solid fa-cogs"
-                              style={{ fontSize: "2rem", color: "#3C72FC" }}
+                              style={{ fontSize: "3rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Implementation</h5>
-                          <p className="small">
+                          <h5
+                            className="mb-3"
+                            style={{ color: "#333", fontWeight: "600" }}
+                          >
+                            Implementation
+                          </h5>
+                          <p
+                            className="small flex-grow-1 d-flex align-items-center"
+                            style={{
+                              color: "#666",
+                              lineHeight: "1.5",
+                            }}
+                          >
                             Seamless deployment of managed services with minimal
                             disruption
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-sm-6">
                         <div
-                          className="process-item text-center p-4"
+                          className="process-item text-center p-4 h-100 d-flex flex-column"
                           style={{
                             background: "#f8f9ff",
-                            borderRadius: "10px",
+                            borderRadius: "15px",
+                            border: "2px solid #e9ecef",
+                            minHeight: "280px",
                           }}
                         >
                           <div className="icon mb-3">
                             <i
                               className="fa-solid fa-eye"
-                              style={{ fontSize: "2rem", color: "#3C72FC" }}
+                              style={{ fontSize: "3rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Monitoring & Support</h5>
-                          <p className="small">
+                          <h5
+                            className="mb-3"
+                            style={{ color: "#333", fontWeight: "600" }}
+                          >
+                            Monitoring & Support
+                          </h5>
+                          <p
+                            className="small flex-grow-1 d-flex align-items-center"
+                            style={{
+                              color: "#666",
+                              lineHeight: "1.5",
+                            }}
+                          >
                             24/7 proactive monitoring and expert support for
                             optimal performance
                           </p>
                         </div>
                       </div>
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-sm-6">
                         <div
-                          className="process-item text-center p-4"
+                          className="process-item text-center p-4 h-100 d-flex flex-column"
                           style={{
                             background: "#f8f9ff",
-                            borderRadius: "10px",
+                            borderRadius: "15px",
+                            border: "2px solid #e9ecef",
+                            minHeight: "280px",
                           }}
                         >
                           <div className="icon mb-3">
                             <i
                               className="fa-solid fa-chart-line"
-                              style={{ fontSize: "2rem", color: "#3C72FC" }}
+                              style={{ fontSize: "3rem", color: "#3C72FC" }}
                             ></i>
                           </div>
-                          <h5 className="mb-2">Optimization</h5>
-                          <p className="small">
+                          <h5
+                            className="mb-3"
+                            style={{ color: "#333", fontWeight: "600" }}
+                          >
+                            Optimization
+                          </h5>
+                          <p
+                            className="small flex-grow-1 d-flex align-items-center"
+                            style={{
+                              color: "#666",
+                              lineHeight: "1.5",
+                            }}
+                          >
                             Continuous improvement and optimization for enhanced
                             efficiency
                           </p>
