@@ -16,9 +16,8 @@ const page = () => {
       <Header />
       <CmnBanner title="About Us" />
       <AboutTwo />
-      <Offer />
-      <Brand />
-      <Case />
+      {/* <Offer />
+      <Brand /> */}
 
       <Team />
       <Footer />

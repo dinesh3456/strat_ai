@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import One from "@/public/images/team/team-image1.jpg";
-import Two from "@/public/images/team/team-image2.jpg";
-import Three from "@/public/images/team/team-image3.jpg";
-import Four from "@/public/images/team/team-image4.jpg";
+// Update these imports to point to your new images
+import One from "@/public/images/team/member1.jpg"; // Sreekala Alavala
+import Two from "@/public/images/team/member2.jpg"; // Prabu Subbarao
+import Three from "@/public/images/team/member3.jpg"; // Jonathan Roy
+import Four from "@/public/images/team/member4.jpg"; // Srikanth Dharmana
 
 const Team = () => {
   return (
@@ -42,7 +43,7 @@ const Team = () => {
                 mask="url(#path-2-inside-1_687_602)"
               />
             </svg>
-            OUR team
+            OUR TEAM
           </h5>
           <h2
             className=""
@@ -53,8 +54,9 @@ const Team = () => {
             Our Leadership Team
           </h2>
         </div>
+
         <div className="row g-4">
-          {/* Team Member 1 */}
+          {/* Team Member 1 - Sreekala Alavala */}
           <div
             className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
@@ -62,56 +64,49 @@ const Team = () => {
             data-aos-duration="1500"
           >
             <div className="team__item">
-              <div className="image">
+              <div className="team__image-wrapper">
                 <Image
                   src={One}
-                  alt="Kawser Ahmed"
+                  alt="Sreekala Alavala - Managing Partner"
                   priority
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={350}
                   style={{
                     width: "100%",
-                    height: "250px",
+                    height: "350px",
                     objectFit: "cover",
+                    objectPosition: "center top",
                   }}
                 />
+                <div className="team__overlay">
+                  <div className="team__social">
+                    <Link
+                      href="https://www.linkedin.com/in/sreekala-alavala"
+                      className="social-link"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                    <Link
+                      href="mailto:sreekala@strat1.ai"
+                      className="social-link"
+                    >
+                      <i className="fa-regular fa-envelope"></i>
+                    </Link>
+                  </div>
+                </div>
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
-                    Kawser Ahmed
+                  <Link href="team-details" className="text-white">
+                    Sreekala Alavala
                   </Link>
                 </h4>
-                <span className="text-white">Web Designer</span>
-              </div>
-              <div className="team__share">
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-pinterest-p"></i>
-                    </Link>
-                  </li>
-                </ul>
+                <span className="text-white">Managing Partner</span>
               </div>
             </div>
           </div>
 
-          {/* Team Member 2 */}
+          {/* Team Member 2 - Prabu Subbarao */}
           <div
             className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
@@ -119,56 +114,46 @@ const Team = () => {
             data-aos-duration="1500"
           >
             <div className="team__item">
-              <div className="image">
+              <div className="team__image-wrapper">
                 <Image
                   src={Two}
-                  alt="Sarah Johnson"
+                  alt="Prabu Subbarao - Chief Operating Officer"
                   priority
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={350}
                   style={{
                     width: "100%",
-                    height: "250px",
+                    height: "350px",
                     objectFit: "cover",
+                    objectPosition: "center top",
                   }}
                 />
+                <div className="team__overlay">
+                  <div className="team__social">
+                    <Link
+                      href="https://www.linkedin.com/in/prabu-subbarao"
+                      className="social-link"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                    <Link href="mailto:prabu@strat1.ai" className="social-link">
+                      <i className="fa-regular fa-envelope"></i>
+                    </Link>
+                  </div>
+                </div>
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
-                    Sarah Johnson
+                  <Link href="team-details" className="text-white">
+                    Prabu Subbarao
                   </Link>
                 </h4>
-                <span className="text-white">UI/UX Designer</span>
-              </div>
-              <div className="team__share">
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-pinterest-p"></i>
-                    </Link>
-                  </li>
-                </ul>
+                <span className="text-white">Chief Operating Officer</span>
               </div>
             </div>
           </div>
 
-          {/* Team Member 3 */}
+          {/* Team Member 3 - Jonathan Roy */}
           <div
             className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
@@ -176,56 +161,49 @@ const Team = () => {
             data-aos-duration="1500"
           >
             <div className="team__item">
-              <div className="image">
+              <div className="team__image-wrapper">
                 <Image
                   src={Three}
-                  alt="Mike Chen"
+                  alt="Jonathan Roy - Head of Operations, USA"
                   priority
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={350}
                   style={{
                     width: "100%",
-                    height: "250px",
+                    height: "350px",
                     objectFit: "cover",
+                    objectPosition: "center top",
                   }}
                 />
+                <div className="team__overlay">
+                  <div className="team__social">
+                    <Link
+                      href="https://www.linkedin.com/in/jonathan-roy"
+                      className="social-link"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                    <Link
+                      href="mailto:jonathan@strat1.ai"
+                      className="social-link"
+                    >
+                      <i className="fa-regular fa-envelope"></i>
+                    </Link>
+                  </div>
+                </div>
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
-                    Mike Chen
+                  <Link href="team-details" className="text-white">
+                    Jonathan Roy
                   </Link>
                 </h4>
-                <span className="text-white">Frontend Developer</span>
-              </div>
-              <div className="team__share">
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-pinterest-p"></i>
-                    </Link>
-                  </li>
-                </ul>
+                <span className="text-white">Head of Operations, USA</span>
               </div>
             </div>
           </div>
 
-          {/* Team Member 4 */}
+          {/* Team Member 4 - Srikanth Dharmana */}
           <div
             className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
@@ -233,51 +211,44 @@ const Team = () => {
             data-aos-duration="1500"
           >
             <div className="team__item">
-              <div className="image">
+              <div className="team__image-wrapper">
                 <Image
                   src={Four}
-                  alt="Emma Davis"
+                  alt="Srikanth Dharmana - Head of Operations, INDIA"
                   priority
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={350}
                   style={{
                     width: "100%",
-                    height: "250px",
+                    height: "350px",
                     objectFit: "cover",
+                    objectPosition: "center top",
                   }}
                 />
+                <div className="team__overlay">
+                  <div className="team__social">
+                    <Link
+                      href="https://www.linkedin.com/in/srikanth-dharmana"
+                      className="social-link"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                    <Link
+                      href="mailto:srikanth@strat1.ai"
+                      className="social-link"
+                    >
+                      <i className="fa-regular fa-envelope"></i>
+                    </Link>
+                  </div>
+                </div>
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
-                    Emma Davis
+                  <Link href="team-details" className="text-white">
+                    Srikanth Dharmana
                   </Link>
                 </h4>
-                <span className="text-white">Project Manager</span>
-              </div>
-              <div className="team__share">
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-pinterest-p"></i>
-                    </Link>
-                  </li>
-                </ul>
+                <span className="text-white">Head of Operations, INDIA</span>
               </div>
             </div>
           </div>
