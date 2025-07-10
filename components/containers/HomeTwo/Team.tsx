@@ -56,7 +56,7 @@ const Team = () => {
         </div>
 
         <div className="row g-4">
-          {/* Team Member 1 - Sreekala Alavala */}
+          {/* Team Member 1 - Srikanth Dharmana */}
           <div
             className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
@@ -67,6 +67,56 @@ const Team = () => {
               <div className="team__image-wrapper">
                 <Image
                   src={One}
+                  alt="Srikanth Dharmana - Head of Operations, INDIA"
+                  priority
+                  width={300}
+                  height={350}
+                  style={{
+                    width: "100%",
+                    height: "350px",
+                    objectFit: "cover",
+                    objectPosition: "center top",
+                  }}
+                />
+                <div className="team__overlay">
+                  <div className="team__social">
+                    <Link
+                      href="https://www.linkedin.com/in/srikanth-dharmana"
+                      className="social-link"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                    <Link
+                      href="mailto:srikanth@strat1.ai"
+                      className="social-link"
+                    >
+                      <i className="fa-regular fa-envelope"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link href="team-details" className="text-white">
+                    Srikanth Dharmana
+                  </Link>
+                </h4>
+                <span className="text-white">Head of Operations, INDIA</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Team Member 2 - Sreekala Alavala */}
+          <div
+            className="col-xl-3 col-lg-6 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="team__image-wrapper">
+                <Image
+                  src={Two}
                   alt="Sreekala Alavala - Managing Partner"
                   priority
                   width={300}
@@ -102,53 +152,6 @@ const Team = () => {
                   </Link>
                 </h4>
                 <span className="text-white">Managing Partner</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Team Member 2 - Prabu Subbarao */}
-          <div
-            className="col-xl-3 col-lg-6 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1500"
-          >
-            <div className="team__item">
-              <div className="team__image-wrapper">
-                <Image
-                  src={Two}
-                  alt="Prabu Subbarao - Chief Operating Officer"
-                  priority
-                  width={300}
-                  height={350}
-                  style={{
-                    width: "100%",
-                    height: "350px",
-                    objectFit: "cover",
-                    objectPosition: "center top",
-                  }}
-                />
-                <div className="team__overlay">
-                  <div className="team__social">
-                    <Link
-                      href="https://www.linkedin.com/in/prabu-subbarao"
-                      className="social-link"
-                    >
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                    <Link href="mailto:prabu@strat1.ai" className="social-link">
-                      <i className="fa-regular fa-envelope"></i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="team__content">
-                <h4>
-                  <Link href="team-details" className="text-white">
-                    Prabu Subbarao
-                  </Link>
-                </h4>
-                <span className="text-white">Chief Operating Officer</span>
               </div>
             </div>
           </div>
@@ -203,7 +206,7 @@ const Team = () => {
             </div>
           </div>
 
-          {/* Team Member 4 - Srikanth Dharmana */}
+          {/* Team Member 4 - Prabu Subbarao */}
           <div
             className="col-xl-3 col-lg-6 col-md-6"
             data-aos="fade-up"
@@ -214,7 +217,7 @@ const Team = () => {
               <div className="team__image-wrapper">
                 <Image
                   src={Four}
-                  alt="Srikanth Dharmana - Head of Operations, INDIA"
+                  alt="Prabu Subbarao - Chief Operating Officer"
                   priority
                   width={300}
                   height={350}
@@ -228,15 +231,12 @@ const Team = () => {
                 <div className="team__overlay">
                   <div className="team__social">
                     <Link
-                      href="https://www.linkedin.com/in/srikanth-dharmana"
+                      href="https://www.linkedin.com/in/prabu-subbarao"
                       className="social-link"
                     >
                       <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
-                    <Link
-                      href="mailto:srikanth@strat1.ai"
-                      className="social-link"
-                    >
+                    <Link href="mailto:prabu@strat1.ai" className="social-link">
                       <i className="fa-regular fa-envelope"></i>
                     </Link>
                   </div>
@@ -245,10 +245,10 @@ const Team = () => {
               <div className="team__content">
                 <h4>
                   <Link href="team-details" className="text-white">
-                    Srikanth Dharmana
+                    Prabu Subbarao
                   </Link>
                 </h4>
-                <span className="text-white">Head of Operations, INDIA</span>
+                <span className="text-white">Chief Operating Officer</span>
               </div>
             </div>
           </div>
