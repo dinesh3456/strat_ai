@@ -79,7 +79,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   <Link href="about">About Us</Link>
                 </li>
                 <li>
-                  <Link href="team">Career</Link>
+                  <Link href="/career">Career</Link>
                 </li>
               </ul>
             </li>
