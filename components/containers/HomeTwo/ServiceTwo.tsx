@@ -5,9 +5,9 @@ import Image from "next/image";
 import One from "@/public/images/shape/service-bg-shape.png";
 import Three from "@/public/images/shape/service-item-shape.png";
 import Four from "@/public/images/icon/service-icon1.png";
-// You'll need to add the AI service icon
 import Seven from "@/public/images/icon/service-icon4.jpg"; // AI Service Icon
 import Eight from "@/public/images/icon/service-icon5.png"; // Managed IT Services Icon
+import Nine from "@/public/images/icon/service-icon6.png"; // BI Analytics Icon (you'll need to add this image)
 
 const ServiceTwo = () => {
   const [isOverviewOpen, setOverviewOpen] = useState(0);
@@ -63,9 +63,9 @@ const ServiceTwo = () => {
           </h2>
         </div>
         <div className="row g-4">
-          {/* Three services in a row */}
+          {/* Four services in a row - adjusted for better layout */}
           <div
-            className="col-lg-4 col-md-6 "
+            className="col-lg-3 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="0"
@@ -103,7 +103,7 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-4 col-md-6 "
+            className="col-lg-3 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="200"
@@ -143,7 +143,7 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-4 col-md-6 "
+            className="col-lg-3 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="400"
@@ -179,6 +179,48 @@ const ServiceTwo = () => {
                   • Network & Security Management
                 </small>
                 <small className="d-block">• Cloud & Device Management</small>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-lg-3 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item d-flex flex-column h-100 " +
+                (isOverviewOpen === 3 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(3)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={Nine} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="/analytics-bi-services">
+                  Advanced Analytics & BI
+                </Link>
+              </h4>
+              <p className="flex-grow-1">
+                Power your strategy with high-volume, accurate, and compliant
+                data. Transform raw data into actionable insights with advanced
+                analytics, predictive modeling, and interactive dashboards that
+                drive strategic decision-making.
+              </p>
+              <div className="service-features mt-3">
+                <small className="d-block mb-1">
+                  • Custom Dashboard Development
+                </small>
+                <small className="d-block mb-1">
+                  • Predictive Analytics & ML
+                </small>
+                <small className="d-block">• Data Warehousing & ETL</small>
               </div>
             </div>
           </div>

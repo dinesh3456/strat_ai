@@ -2,14 +2,22 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import svgLogo from "@/public/images/logo/logo.svg";
+import svgLogo from "@/public/images/logo/logo-light.svg";
 
-const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
-  const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
+interface OffCanvasMenuProps {
+  toggleMenu: boolean;
+  handleToggleMenu: (value: boolean) => void;
+}
+
+const OffCanvasMenu = ({
+  toggleMenu,
+  handleToggleMenu,
+}: OffCanvasMenuProps) => {
+  const [openSubMenu, setOpenSubMenu] = useState("");
 
   const handleSubmenu = (submenu: string) => {
     if (submenu === openSubMenu) {
-      setOpenSubMenu(null);
+      setOpenSubMenu("");
     } else {
       setOpenSubMenu(submenu);
     }
@@ -56,6 +64,11 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                 <li>
                   <Link href="/managed-it-services">Managed IT Services</Link>
                 </li>
+                <li>
+                  <Link href="/analytics-bi-services">
+                    Advanced Analytics & BI
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -79,7 +92,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   <Link href="about">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/career">Career</Link>
+                  <Link href="team">Career</Link>
                 </li>
               </ul>
             </li>

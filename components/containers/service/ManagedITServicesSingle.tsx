@@ -680,6 +680,12 @@ const ManagedITServicesSingle = () => {
                       </Link>
                       <i className="fa-regular fa-arrow-right-long primary-color"></i>
                     </li>
+                    <li>
+                      <Link href="/analytics-bi-services">
+                        Advanced Analytics & BI
+                      </Link>
+                      <i className="fa-regular fa-arrow-right-long primary-color"></i>
+                    </li>
                   </ul>
                 </div>
 
