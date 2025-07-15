@@ -7,7 +7,8 @@ import Three from "@/public/images/shape/service-item-shape.png";
 import Four from "@/public/images/icon/service-icon1.png";
 import Seven from "@/public/images/icon/service-icon4.jpg"; // AI Service Icon
 import Eight from "@/public/images/icon/service-icon5.png"; // Managed IT Services Icon
-import Nine from "@/public/images/icon/service-icon6.png"; // BI Analytics Icon (you'll need to add this image)
+import Nine from "@/public/images/icon/service-icon6.png"; // BI Analytics Icon
+import ProductEngIcon from "@/public/images/icon/product-engineering-icon.png";
 
 const ServiceTwo = () => {
   const [isOverviewOpen, setOverviewOpen] = useState(0);
@@ -62,10 +63,11 @@ const ServiceTwo = () => {
             Empowering Your Digital Transformation
           </h2>
         </div>
-        <div className="row g-4">
-          {/* Four services in a row - adjusted for better layout */}
+
+        {/* First Row - 3 Services */}
+        <div className="row g-4 mb-4">
           <div
-            className="col-lg-3 col-md-6 "
+            className="col-lg-4 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="0"
@@ -103,7 +105,7 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-3 col-md-6 "
+            className="col-lg-4 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="200"
@@ -143,7 +145,7 @@ const ServiceTwo = () => {
             </div>
           </div>
           <div
-            className="col-lg-3 col-md-6 "
+            className="col-lg-4 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="400"
@@ -182,8 +184,12 @@ const ServiceTwo = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Second Row - 2 Services */}
+        <div className="row g-4 justify-content-center">
           <div
-            className="col-lg-3 col-md-6 "
+            className="col-lg-4 col-md-6 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="600"
@@ -221,6 +227,50 @@ const ServiceTwo = () => {
                   • Predictive Analytics & ML
                 </small>
                 <small className="d-block">• Data Warehousing & ETL</small>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-lg-4 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item d-flex flex-column h-100 " +
+                (isOverviewOpen === 4 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(4)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={ProductEngIcon} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="/product-engineering">
+                  Product Engineering Services
+                </Link>
+              </h4>
+              <p className="flex-grow-1">
+                Transform software portfolios with comprehensive product
+                engineering. From ideation to deployment, we deliver resilient,
+                future-ready solutions using cutting-edge technologies and agile
+                methodologies.
+              </p>
+              <div className="service-features mt-3">
+                <small className="d-block mb-1">
+                  • Product Design & Prototyping
+                </small>
+                <small className="d-block mb-1">
+                  • Agile Development & Testing
+                </small>
+                <small className="d-block">
+                  • Lifecycle Management & Support
+                </small>
               </div>
             </div>
           </div>
